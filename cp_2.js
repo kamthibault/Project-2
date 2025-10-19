@@ -27,3 +27,15 @@ async function fetchProductsAsync(){
         handleError(error);
     }
 }
+function displayProducts(products) {
+    const container = document.getElementById(`products-container`);
+    container.innerhtml = ``;
+
+    products.slice(0,5).forEach(product =>{
+        const {name, price, image}= product.fields;
+
+        const card = document.createElement(`div`);
+        card.className = `product-card`;
+        
+    })
+}
